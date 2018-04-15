@@ -62,7 +62,7 @@ int main() {
 		v.push_back(&x);
 	}
 
-	* Okay, so what do we need? The "new" keyword!
+	/* Okay, so what do we need? The "new" keyword!
 
 		"new Student(name)" allocates memory on the heap for a Student object with the specified
 		name. Then it returns a pointer to this Student object for the push_back function to push
@@ -71,6 +71,7 @@ int main() {
 		with scope larger than the for loop. Everything worked! On top of this, we've only created
 		exactly one instance of the Student object, as opposed to two instances if we were to use
 		the PIC 10A version.
+	*/
 
 	std::vector<Student*> w;
 	for (size_t i = 0; i < 10; ++i) {
