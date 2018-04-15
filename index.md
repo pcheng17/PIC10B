@@ -1,6 +1,6 @@
 ## Discussion Code
 
-I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log in to CCLE. It's quite annoying... 
+I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE. It's quite annoying... 
 
 
 #### Week 2, Thursday (4/12)
