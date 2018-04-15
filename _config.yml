@@ -2,5 +2,5 @@ theme: jekyll-theme-minimal
 title: Peter's PIC 10B Discussion
 description: Bookmark this site for all code postings
 
-footer-links:
-  email: pcheng17@math.ucla.edu
+social-network-links:
+  email: "pcheng17@math.ucla.edu"
