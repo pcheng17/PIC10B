@@ -2,6 +2,9 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE. It's quite annoying... 
 
+### Week 3, Tuesday (4/17)
+<a href="Code/integers.txt" download>integers.txt</a><br>
+A text file containing integers that we'll use in discussion to learn about file streams. Code from discussion will be posted soon.
 
 #### Week 2, Thursday (4/12)
 <a href="Code/DisWeek2_2.cpp" download>DisWeek2_2.cpp</a><br>
