@@ -1,10 +1,10 @@
 ## Discussion Code
 
-I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE. It's quite annoying... 
+I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
 #### Week 3, Tuesday (4/17)
 <a href="Code/DisWeek3_1.cpp" download>DisWeek3_1.cpp</a>, <a href="Code/integers.txt" download>integers.txt</a><br>
-We officially talked about `typedef` and function pointers. Then, we briefly saw a quick introduction to file streams. We'll see way more on Thursday. I've also posted integers.txt, the text file that we practiced reading in from. For Mac users, this [link](https://stackoverflow.com/questions/23438393/new-to-xcode-cant-open-files-in-c) will be really helpful in getting your projects setup to open with `std::ifstream` and `std::ofstream` objects. 
+We officially talked about `typedef` and function pointers. Then, we briefly saw a quick introduction to file streams. We'll see way more on Thursday. I've also posted integers.txt, the text file that we practiced reading in from. For Mac users, this [link](https://stackoverflow.com/questions/23438393/new-to-xcode-cant-open-files-in-c) will be really helpful in getting your projects setup to open files with `std::ifstream` and `std::ofstream` objects. 
 
 #### Week 2, Thursday (4/12)
 <a href="Code/DisWeek2_2.cpp" download>DisWeek2_2.cpp</a><br>
