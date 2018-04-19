@@ -1,0 +1,9 @@
+We're going to read this file into a program that will count how many words, and separately, how many numbers there are in this file. 
+
+Many think that a leap year happens every 4 years, and for the most part, that's the case. However, it's a little more nuanced than that. To determine if a year is a leap year, we must run through 3 checks in the following order:
+
+	1. Years that are divisible by 4 are leap years.
+	2. Years that are divisible by 100 are not leap years.
+	3. Years that are divisible by 400 are leap years.
+
+For example, the year 2000 is a leap year because it is divisible by 400. Though 2000 is divisible by 100, 2000 is also divisible by 400, which makes it a leap year. Here's another example. The year 1900 is divisible by 4 and 100, but not 400. Therefore, 1900 is not a leap year.  
