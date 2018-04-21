@@ -3,8 +3,8 @@
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
 #### Week 3, Thursday (4/19)
-<a href="Code/readFile.txt" download>readFile.txt</a><br>
-File we'll be using in discussion to learn about streams.
+<a href="Code/DisWeek3_2.cpp" download>DisWeek3_2.cpp</a>, <a href="Code/readFile.txt" download>readFile.txt</a><br>
+We talked about streams and put together code that counts the number of words and numbers in the file that I posted. 
 
 #### Week 3, Tuesday (4/17)
 <a href="Code/DisWeek3_1.cpp" download>DisWeek3_1.cpp</a>, <a href="Code/integers.txt" download>integers.txt</a><br>
