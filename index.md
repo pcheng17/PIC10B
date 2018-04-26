@@ -2,6 +2,15 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
+#### Week 4, Tuesday (4/24)
+<a href="Code/Integer.h" download>Integer.h</a>, <a href="Code/Integer.cpp" download>Integer.cpp</a>, <a href="Code/DisWeek4_1.cpp" download>DisWeek4_1.cpp</a><br>
+We spent the entire discussion talking about operator overloads, using an Integer class as an example for their implementation. The declarations for the class and non-member functions are in the header file, while all of the definitions can be found in the associated cpp file. Then, a short `int main()` is included in DisWeek4_1.cpp to demonstrate that the operators do work. I included an overload for `operator<<` so I could output the results to verify everything works. We'll talk about that on Thursday.
+<br>
+Here are the take-away points from today's discussion:
+* An operator overload should only be a member function if it prioritizes the left-hand side argument, with the exception of `operator++` and `operator--` (both postfix and prefix versions). This includes `+=`, `-=`, `*=`, and `/=`.
+* Thus, an operator overload should not be a member function if it doesn't prioritize either of the two arguments when calling the operator. This includes `+`, `-`, `*`, `/`, `<`, `<=`, `>`, `>=`, and `==`.
+* Return by reference is only relevant for the operator overloads that are member functions. It's used exactly when the operator should return `*this`, i.e. an object that already exists beyond the scope of the function being called. 
+
 #### Week 3, Thursday (4/19)
 <a href="Code/DisWeek3_2.cpp" download>DisWeek3_2.cpp</a>, <a href="Code/readFile.txt" download>readFile.txt</a><br>
 We talked about streams and put together code that counts the number of words and numbers in the file that I posted. Again, Mac users will find this [link](https://stackoverflow.com/questions/23438393/new-to-xcode-cant-open-files-in-c) really helpful in getting XCode projects set up to open files with `std::ifstream` and `std::ofstream` objects.
