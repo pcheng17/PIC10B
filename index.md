@@ -2,6 +2,10 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
+#### Week 5, Tuesday (5/1)
+<a href="Code/BaseDerived.cpp" download>BaseDerived.cpp</a>
+We went through an overview of inheritance, polymorphism, and the importance of the `virtual` keyword. The code that I've attached is an example of why `virtual` is important, and why we must include a destructor in the base class. Remember, the moment we design classes that use inheritance, we immediately allow polymophism to be used. This means that we need to think about destructors and virtual functions.
+
 #### Week 4, Tuesday (4/24)
 <a href="Code/Integer.h" download>Integer.h</a>, <a href="Code/Integer.cpp" download>Integer.cpp</a>, <a href="Code/DisWeek4_1.cpp" download>DisWeek4_1.cpp</a><br>
 We spent the entire discussion talking about operator overloads, using an Integer class as an example for their implementation. The declarations for the class and non-member functions are in the header file, while all of the definitions can be found in the associated cpp file. Then, a short `int main()` is included in DisWeek4_1.cpp to demonstrate that the operators do work. I included an overload for `operator<<` so I could output the results to verify everything works. We'll talk about that on Thursday. Here are the take-away points from today's discussion:
