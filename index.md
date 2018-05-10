@@ -2,6 +2,10 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
+#### Week 6, Thursday (5/10)
+<a href="Code/integers100000.txt" download>integers100000.txt</a><br>
+A text file we might use in discussion.
+
 #### Week 5, Tuesday (5/1)
 <a href="Code/BaseDerived.cpp" download>BaseDerived.cpp</a><br>
 We went through an overview of inheritance, polymorphism, and the importance of the `virtual` keyword. The code that I've attached is an example of why `virtual` is important, and why we must include a destructor in the base class. Remember, the moment we design classes that use inheritance, we immediately allow polymophism to be used. This means that we need to think about destructors and virtual functions.
