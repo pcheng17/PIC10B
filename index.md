@@ -2,6 +2,10 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
+#### Week 7, Tuesday/Thursday (5/15, 5/17)
+<a href="Code/DisWeek7_1.cpp" download>DisWeek7_1.cpp</a><br>
+I talked about iterators in the context of vectors. I also demonstrated the new "range-based" for loop and the `auto` keyword. 
+
 #### Week 6, Thursday (5/10)
 <a href="Code/integers100000.txt" download>integers100000.txt</a><br>
 A text file we might use in discussion.
