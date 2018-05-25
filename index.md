@@ -2,6 +2,10 @@
 
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
+#### Week 8, Thursday (5/24)
+<a href="Code/List.h" download>List.h</a>, <a href="Code/ListTest.cpp" download>ListTest.cpp</a><br>
+Here is my version of how the homework regarding implementation of a linked list could be done, minus the sort function. I included a few things that you guys haven't seen before, which are things that you aren't required to know for the class. However, they may be helpful for the next homework assignment.
+
 #### Week 8, Tuesday (5/22)
 <a href="Code/DisWeek8_1.cpp" download>DisWeek8_1.cpp</a><br>
 Though we spent most of the time in discussion talking about the homework assignment regarding lists, I spent a little bit of time talking about set, which is something we're going to need to be very familiar with very soon. 
