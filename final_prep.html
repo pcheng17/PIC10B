@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>final_prep</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../Notes/notes.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><br />
+</p>
+<h1 id="pic-10b-final-exam-prep">PIC 10B Final Exam Prep</h1>
+<hr />
+<h2 id="section">#1</h2>
+<p>Assume all necessary libraries have been included, and consider the following code snippets:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dt">int</span> main() {</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">    set&lt;<span class="dt">int</span>&gt; numbers;</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt;= <span class="dv">100000</span>; ++i) {</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">        numbers.insert(i);</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    }</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">    <span class="cf">for</span> (<span class="kw">auto</span> it = numbers.begin(); it != numbers.end(); ++it) {</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">        <span class="cf">if</span> (*it % <span class="dv">2</span> == <span class="dv">0</span>) </a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">            numbers.erase(it);</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    }</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">}</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="dt">int</span> main() {</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">    set&lt;<span class="dt">int</span>&gt; numbers;</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt;= <span class="dv">100000</span>; ++i) {</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">        numbers.insert(i);</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">    }</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">    <span class="cf">for</span> (<span class="kw">auto</span> it = numbers.begin(); it != numbers.end(); ++it) {</a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">        <span class="cf">if</span> (*it % <span class="dv">2</span> == <span class="dv">0</span>) </a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">            it = numbers.erase(it);     <span class="co">// This line is different!</span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9">    }</a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">    <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">}</a></code></pre></div>
+<p>As you can probably guess, both snippets of code intend to remove all even integers from the set. However, the first snippet might crash, and the second one, though it actually does the right thing without crashing, it’s not doing exactly what you think it’s doing! To the best of your ability, explain why for both. Then, re-write the for-loop so it successfully removes all even integers from the set.</p>
+<h2 id="section-1">#2</h2>
+<p>Alice and Bob are studying for their PIC 10B exam as well when Alice asks Bob about binary search. They both agree it’s <span class="math inline"><em>O</em>(log <em>n</em>)</span>, but Alice is curious why it can’t be faster. She proposes the following code for her modified version of binary search, which she’s calling “ternary search.” (Note I’m only providing the helper function, since that’s the function that does the work of searching.)</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="dt">size_t</span> ternarySearch_helper(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt;&amp; v, </a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">                            <span class="dt">size_t</span> begin, </a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">                            <span class="dt">size_t</span> end, </a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">                            <span class="dt">int</span> val) {</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">    <span class="cf">if</span> (end - begin == <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">        <span class="cf">if</span> (v[begin] == val)</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">            <span class="cf">return</span> begin;</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">        <span class="cf">else</span> </a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">            <span class="cf">return</span> v.size();</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">    }</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">    <span class="dt">size_t</span> firstThird = (begin + end) / <span class="dv">3</span>;</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">    <span class="dt">size_t</span> secondThird = <span class="dv">2</span> * firstThird;</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">    <span class="cf">if</span> (val[begin] &lt;= val &amp;&amp; val &lt; v[firstThird])</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">        <span class="cf">return</span> ternarySearch_helper(v, begin, firstThird, val);</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">    <span class="cf">else</span> <span class="cf">if</span> (v[firstThird] &lt;= val &amp;&amp; val &lt; v[secondThird])</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">        <span class="cf">return</span> ternarySearch_helper(v, firstThird, secondThird, val);</a>
+<a class="sourceLine" id="cb3-17" data-line-number="17">    <span class="cf">else</span> </a>
+<a class="sourceLine" id="cb3-18" data-line-number="18">        <span class="cf">return</span> ternarySearch_helper(v, secondThird, end, val);</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">}</a></code></pre></div>
+<p>Alice’s idea is to break the vector up into three chunks (as opposed to the usual two in binary search), and recursively search in the chunk that should contain the value. Is Alice’s “ternary search” faster than binary search? Find its cost to explain your answer.</p>
+<h2 id="section-2">#3</h2>
+<p>Mark is writing some code where he needs to maintain a collection of strings, and he needs the strings to be sorted. Alice suggests that Mark should use <code>std::set&lt;string&gt;</code> because sets automatically sort their contents. However, after trying it out, he realizes that the set sorts the strings alphabetically (which is exactly how it should be), but he needs to sort the strings with respect to their lengths! What should Mark do? Write the code that Mark would need to write in order for this to work. (Hint: the best solution, which is the one I want you guys to go for, is actually only around 10 lines long. :) If you can’t come up with it, then just brainstorm whatever ideas may come to mind, but don’t write code for it. Basically, if it’s not a quick solution, I don’t want you spending too much time on the code.)</p>
+<h2 id="section-3">#4</h2>
+<p>A while ago, I provided you guys code for an Integer class with most (if not all) of the operators overloaded to demonstrate how they all work. If you want practice with that, then you should try implementing it again for yourself for practice. However, for this question, you can simply just pull up the code that’s been posted online. Supply an operator overload for addition so that you’re able to run the following lines of code:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="dt">int</span> x = <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">Integer y = <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">Integer a = x + y;</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">Integer b = y + x;</a></code></pre></div>
+<p>Note that this requires the operator overload for the + operator to handle <code>int + Integer</code> and <code>Integer + int</code>. This example is one great reason why the + operator shouldn’t be a member function - it can’t prioritize either of its arguments in cases where the arguments have different types!</p>
+<h2 id="section-4">#5</h2>
+<p>Let v be a vector of POSITIVE integers where all but one of the integers are repeated at least twice. For example,</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; v = {<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">4</span>}   <span class="co">// only 5 appears once</span></a></code></pre></div>
+<p>Write some code to find the integer that shows up only once. Then, cost your function.</p>
+<p>To see why operation count is important, give this a shot with the numbers in <a href="http://pcheng17.github.io/Code/integers100000.txt">integers100000.txt</a>. You may like to know that all numbers in that file are in the range [1, 1000].</p>
+<h2 id="section-5">#6</h2>
+<p>The file <a href="http://pcheng17.github.io/Code/numbers.txt">numbers.txt</a> contains all the integers between 0 and 500 (inclusive) except for a few. Print out those few.</p>
+<p>This might be a slightly challenging problem to put together. However, the point of this problem isn’t actually the problem itself - it’s actually just to get some practice with choosing the correct container class to use. I’m only making it slightly difficult because most of you might be bored otherwise :) If you can’t put anything together, then just picture how you might possibly do this.</p>
+<p>A hint that you’re welcome to use (bonus points if you don’t need it): none of the numbers that are missing are consecutive.</p>
+</body>
+</html>
