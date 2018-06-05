@@ -1,0 +1,71 @@
+#header {
+    padding-top: 1em;
+    font-size: 84%;
+    text-align: center;
+    font-family: Helvetica;
+    height: 3px;
+}
+
+#footer {
+	padding-bottom: 1em;
+    text-align: center;
+    font-family: Helvetica;
+    height: 90px;
+}
+
+div.sourceCode {
+	font-size: 115%;
+}
+
+/* h1 (#) headings */
+h1 {
+	color: #333333;
+}
+
+/* h2 (##) headings */
+h2 {
+	color: #333333;
+}
+
+a:link {
+	color: #217cc9;
+}
+
+a:visited {
+	color: #217cc9;
+}
+
+a:hover {
+	color: #8dcbfc;
+}
+
+body {
+    margin: auto;
+    max-width: 55em; 
+    font-family: Helvetica;
+    font-size: 91%;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+}
+
+/* Horizontal line */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+img+em {
+	display: block;
+	text-align: center;
+}
+
