@@ -6,26 +6,26 @@
 
 ```c++
 int main() {
-    set<int> numbers;
+    set<int> s;
     for (int i = 0; i <= 100000; ++i) {
-        numbers.insert(i);
+        s.insert(i);
     }
-    for (auto it = numbers.begin(); it != numbers.end(); ++it) {
+    for (auto it = s.begin(); it != s.end(); ++it) {
         if (*it % 2 == 0) 
-            numbers.erase(it);
+            s.erase(it);
     }
     return 0;
 }
 ```
 ```c++
 int main() {
-    set<int> numbers;
+    set<int> s;
     for (int i = 0; i <= 100000; ++i) {
-        numbers.insert(i);
+        s.insert(i);
     }
-    for (auto it = numbers.begin(); it != numbers.end(); ++it) {
+    for (auto it = s.begin(); it != s.end(); ++it) {
         if (*it % 2 == 0) 
-            it = numbers.erase(it);     // This line is different!
+            it = s.erase(it);     // This line is different!
     }
     return 0;
 }
