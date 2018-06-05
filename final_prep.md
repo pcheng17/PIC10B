@@ -4,13 +4,13 @@
 
 ```c++
 int main() {
-    std::set<int> numbers;
+    std::set<int> s;
     for (int i = 0; i <= 100000; ++i) {
-        numbers.insert(i);
+        s.insert(i);
     }
-    for (auto it = numbers.begin(); it != numbers.end(); ++it) {
+    for (auto it = s.begin(); it != s.end(); ++it) {
         if (*it % 2 == 0) 
-            numbers.erase(it);
+            s.erase(it);
     }
     return 0;
 }
