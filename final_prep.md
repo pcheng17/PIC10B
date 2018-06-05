@@ -4,7 +4,7 @@
 
 1. Assume all necessary libraries have been included, and consider the following code snippets:
 
-```c++
+```
 int main() {
     set<int> s;
     for (int i = 0; i <= 100000; ++i) {
@@ -17,7 +17,7 @@ int main() {
     return 0;
 }
 ```
-```c++
+```
 int main() {
     set<int> s;
     for (int i = 0; i <= 100000; ++i) {
@@ -31,3 +31,5 @@ int main() {
     return 0;
 }
 ```
+As you can probably guess, both snippets of code intend to remove all even integers from the set. However, the first snippet might crash, and the second one, though it won't crash, it's not doing exactly what you think it's doing! To the best of your ability, explain why for both. Then, fix the code so that it actually successfully removes all even integers.
+
