@@ -24,9 +24,9 @@ int main() {
         s.insert(i);
     }
     for (auto it = s.begin(); it != s.end(); ++it) {
-        if (*it % 2 == 0) 
-           	// This line is different!
-            it = s.erase(it);    
+      if (*it % 2 == 0) 
+        // This line is different!
+        it = s.erase(it);    
     }
     return 0;
 }
