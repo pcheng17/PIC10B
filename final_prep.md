@@ -25,7 +25,8 @@ int main() {
     }
     for (auto it = s.begin(); it != s.end(); ++it) {
         if (*it % 2 == 0) 
-            it = s.erase(it);     // This line is different!
+           	// This line is different!
+            it = s.erase(it);    
     }
     return 0;
 }
