@@ -105,13 +105,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-13" data-line-number="13">    <span class="cf">return</span> <span class="dv">0</span>;</a>
 <a class="sourceLine" id="cb1-14" data-line-number="14">}</a></code></pre></div>
 <h3 id="section-1">#2</h3>
-<p>Implement a function that determines whether or not a word is a palindrome, i.e. it reads the same forward and backward, like “anna.” Note that this function is only meant to be used on inputs that are a single word. Use recursion, good coding practices, and make sure to provide a function that the user can call without too much effort. Finally, cost your function, and be very careful about how you cost your function. Hint: making copies factors into the operation count!</p>
-<h3 id="section-2">#3</h3>
+<p>Implement functions that determine whether or not a word is a palindrome, i.e. it reads the same forward and backward, like “anna.” Note that this function is only meant to be used on inputs that are a single word. Use recursion, good coding practices, and make sure to provide a function that the user can call without too much effort. Finally, cost your function, and be very careful about how you cost your function. Hint: making copies factors into the operation count!</p>
+<p>Can you do this for numbers instead? That is, implement a function that determine if a number is a palindrome. You can do this from the ground up, or you can use the work you just did above with strings. Since I don’t intend for this problem to be a math-y one, I challenge you to use the functions you just wrote for strings for this problem.</p>
 <h2 id="harder-problems">Harder problems</h2>
-<h3 id="section-3">#1</h3>
+<h3 id="section-2">#1</h3>
 <p>Consider the following code snippets:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="dt">int</span> main() {</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">    set&lt;<span class="dt">int</span>&gt; numbers;</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">    <span class="bu">std::</span>set&lt;<span class="dt">int</span>&gt; numbers;</a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt;= <span class="dv">100000</span>; ++i) {</a>
 <a class="sourceLine" id="cb2-4" data-line-number="4">        numbers.insert(i);</a>
 <a class="sourceLine" id="cb2-5" data-line-number="5">    }</a>
@@ -122,7 +122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-10" data-line-number="10">    <span class="cf">return</span> <span class="dv">0</span>;</a>
 <a class="sourceLine" id="cb2-11" data-line-number="11">}</a></code></pre></div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="dt">int</span> main() {</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">    set&lt;<span class="dt">int</span>&gt; numbers;</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">    <span class="bu">std::</span>set&lt;<span class="dt">int</span>&gt; numbers;</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt;= <span class="dv">100000</span>; ++i) {</a>
 <a class="sourceLine" id="cb3-4" data-line-number="4">        numbers.insert(i);</a>
 <a class="sourceLine" id="cb3-5" data-line-number="5">    }</a>
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-10" data-line-number="10">    <span class="cf">return</span> <span class="dv">0</span>;</a>
 <a class="sourceLine" id="cb3-11" data-line-number="11">}</a></code></pre></div>
 <p>As you can probably guess, both snippets of code intend to remove all even integers from the set. However, the first snippet might crash, and the second one, though it actually does the right thing without crashing, it’s not doing exactly what you think it’s doing! To the best of your ability, explain why for both. Then, re-write the for-loop so it successfully removes all even integers from the set.</p>
-<h3 id="section-4">#2</h3>
+<h3 id="section-3">#2</h3>
 <p>Alice and Bob are studying for their PIC 10B exam as well when Alice asks Bob about binary search. They both agree it’s <span class="math inline"><em>O</em>(log <em>n</em>)</span>, but Alice is curious why it can’t be faster. She proposes the following code for her modified version of binary search, which she’s calling “ternary search.” Note I’m only providing the helper function since that’s the function that does the work of searching.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="dt">size_t</span> ternarySearch_helper(<span class="at">const</span> <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt;&amp; v, </a>
 <a class="sourceLine" id="cb4-2" data-line-number="2">                            <span class="dt">size_t</span> begin, </a>
@@ -155,9 +155,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-18" data-line-number="18">        <span class="cf">return</span> ternarySearch_helper(v, secondThird, end, val);</a>
 <a class="sourceLine" id="cb4-19" data-line-number="19">}</a></code></pre></div>
 <p>Alice’s idea is to break the vector up into three chunks (as opposed to the usual two in binary search), and recursively search in the chunk that should contain the value. Is Alice’s “ternary search” faster than binary search? Find its cost to explain your answer.</p>
-<h3 id="section-5">#3</h3>
+<h3 id="section-4">#3</h3>
 <p>Mark is writing some code where he needs to maintain a collection of strings, and he needs the strings to be sorted. Alice suggests that Mark should use <code>std::set&lt;std::string&gt;</code> because sets automatically sort their contents. However, after trying it out, he realizes that the set sorts the strings alphabetically (which is exactly how it should be), but he needs to sort the strings with respect to their lengths! What should Mark do? Write the code that Mark would need to write in order for this to work. (Hint: the best solution, which is the one I want you guys to go for, is actually only around 10 lines long. :) If you can’t come up with it, then just brainstorm whatever ideas may come to mind, but don’t write code for it. Basically, if it’s not a quick solution, I don’t want you spending too much time on the code.)</p>
-<h3 id="section-6">#4</h3>
+<h3 id="section-5">#4</h3>
 <p>A while ago, I provided you guys code for an Integer class with most (if not all) of the operators overloaded to demonstrate how they all work. If you want practice with that, then you should try implementing it again for yourself for practice. However, for this question, you can simply just pull up the code that’s been posted online, <a href="http://pcheng17.github.io/Code/Integer.h">here</a> and <a href="http://pcheng17.github.io/Code/Integer.cpp">here</a>. Supply an operator overload for addition so that you’re able to run the following lines of code:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="dt">int</span> x = <span class="dv">2</span>;</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2">Integer y = <span class="dv">2</span>;</a>
@@ -165,12 +165,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-4" data-line-number="4">Integer a = x + y;</a>
 <a class="sourceLine" id="cb5-5" data-line-number="5">Integer b = y + x;</a></code></pre></div>
 <p>Note that this requires the operator overload for the + operator to handle <code>int + Integer</code> and <code>Integer + int</code>. This example is one great reason why the + operator shouldn’t be a member function - it can’t prioritize either of its arguments in cases where the arguments have different types!</p>
-<h3 id="section-7">#5</h3>
+<h3 id="section-6">#5</h3>
 <p>Let v be a vector of POSITIVE integers where all but one of the integers are repeated at least twice. For example,</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; v = {<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">4</span>}   <span class="co">// only 5 appears once</span></a></code></pre></div>
 <p>Write some code to find the integer that shows up only once. Then, cost your function.</p>
-<p>To see why operation count is important, give this a shot with the numbers in <a href="http://pcheng17.github.io/Code/integers100000.txt">integers100000.txt</a>. You may like to know that all numbers in that file are in the range [1, 1000].</p>
-<h3 id="section-8">#6</h3>
+<p>To see why operation count is important, give this a shot with the numbers in <a href="http://pcheng17.github.io/Code/integers100000.txt">integers100000.txt</a>. You may like to know that all numbers in that file are in the range [1, 1000]. By the way, even just reading the file’s contents into your program would be a great practice of streams :)</p>
+<h3 id="section-7">#6</h3>
 <p>The file <a href="http://pcheng17.github.io/Code/numbers.txt">numbers.txt</a> contains all the integers between 0 and 500 (inclusive) except for a few. Print out those few.</p>
 <p>This might be a slightly challenging problem to put together. However, the point of this problem isn’t actually the problem itself - it’s actually just to get some practice with choosing the correct container class to use. I’m only making it slightly difficult because most of you might be bored otherwise :) If you can’t put anything together, then just picture how you might possibly do this.</p>
 <p>A hint that you’re welcome to use (bonus points if you don’t need it): none of the numbers that are missing are consecutive.</p>
