@@ -112,7 +112,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">class</span> Shape</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">{</a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">public</span>:</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="dt">double</span> getArea() <span class="at">const</span> = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">    <span class="dt">double</span> getArea() <span class="at">const</span> { <span class="cf">return</span> <span class="fl">0.0</span>; }</a>
 <a class="sourceLine" id="cb2-5" data-line-number="5">};</a>
 <a class="sourceLine" id="cb2-6" data-line-number="6"></a>
 <a class="sourceLine" id="cb2-7" data-line-number="7"><span class="kw">class</span> Rectangle : Shape</a>
@@ -121,19 +121,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-10" data-line-number="10">    Rectangle(<span class="dt">double</span> l, <span class="dt">double</span> w) : length(l), width(w) {}</a>
 <a class="sourceLine" id="cb2-11" data-line-number="11"></a>
 <a class="sourceLine" id="cb2-12" data-line-number="12">    <span class="dt">double</span> getArea() <span class="at">const</span> { <span class="cf">return</span> length * width; }</a>
-<a class="sourceLine" id="cb2-13" data-line-number="13">    <span class="dt">double</span> getLength() { <span class="cf">return</span> length; }</a>
-<a class="sourceLine" id="cb2-14" data-line-number="14">    <span class="dt">double</span> getWidth() { <span class="cf">return</span> width; }</a>
-<a class="sourceLine" id="cb2-15" data-line-number="15">    <span class="dt">size_t</span> getNumberOfSides() { <span class="cf">return</span> <span class="dv">4</span>; } </a>
-<a class="sourceLine" id="cb2-16" data-line-number="16"></a>
-<a class="sourceLine" id="cb2-17" data-line-number="17">    <span class="bu">std::</span>ostream <span class="kw">operator</span>&lt;&lt;(<span class="bu">std::</span>ostream os, <span class="at">const</span> Rectangle&amp; rhs);</a>
-<a class="sourceLine" id="cb2-18" data-line-number="18"><span class="kw">private</span>:</a>
-<a class="sourceLine" id="cb2-19" data-line-number="19">    <span class="dt">double</span> length, width;</a>
-<a class="sourceLine" id="cb2-20" data-line-number="20">};</a>
-<a class="sourceLine" id="cb2-21" data-line-number="21"></a>
-<a class="sourceLine" id="cb2-22" data-line-number="22"><span class="bu">std::</span>ostream <span class="kw">operator</span>&lt;&lt;(<span class="bu">std::</span>ostream os, <span class="at">const</span> Rectangle&amp; rhs) {</a>
-<a class="sourceLine" id="cb2-23" data-line-number="23">    os &lt;&lt; length &lt;&lt; <span class="st">&quot; x &quot;</span> &lt;&lt; width &lt;&lt; <span class="bu">std::</span>endl;</a>
-<a class="sourceLine" id="cb2-24" data-line-number="24">    <span class="cf">return</span> os;</a>
-<a class="sourceLine" id="cb2-25" data-line-number="25">}</a></code></pre></div>
+<a class="sourceLine" id="cb2-13" data-line-number="13">    <span class="dt">size_t</span> getNumberOfSides() { <span class="cf">return</span> <span class="dv">4</span>; } </a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15">    <span class="bu">std::</span>ostream <span class="kw">operator</span>&lt;&lt;(<span class="bu">std::</span>ostream os, <span class="at">const</span> Rectangle&amp; rhs);</a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="kw">private</span>:</a>
+<a class="sourceLine" id="cb2-17" data-line-number="17">    <span class="dt">double</span> length, width;</a>
+<a class="sourceLine" id="cb2-18" data-line-number="18">};</a>
+<a class="sourceLine" id="cb2-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb2-20" data-line-number="20"><span class="bu">std::</span>ostream <span class="kw">operator</span>&lt;&lt;(<span class="bu">std::</span>ostream os, <span class="at">const</span> Rectangle&amp; rhs) {</a>
+<a class="sourceLine" id="cb2-21" data-line-number="21">    os &lt;&lt; length &lt;&lt; <span class="st">&quot; x &quot;</span> &lt;&lt; width &lt;&lt; <span class="bu">std::</span>endl;</a>
+<a class="sourceLine" id="cb2-22" data-line-number="22">    <span class="cf">return</span> os;</a>
+<a class="sourceLine" id="cb2-23" data-line-number="23">}</a></code></pre></div>
 <h2 id="harder-problems">Harder problems</h2>
 <h3 id="section-3">#1</h3>
 <p>Consider the following code snippets:</p>

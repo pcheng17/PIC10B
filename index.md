@@ -3,7 +3,8 @@
 I will be using this page to post all of my code from discussion so that no one needs to go through the extra authentication step just to log into CCLE.
 
 ### Final Exam Prep
-This is my own [final exam prep](final_prep.html) for you guys, and hence has nothing to do with the actual final exam that Professor Falcon is writing. I purposely included problems that are more comprehensive and a little more difficult to get you guys thinking more.
+This is my own [final exam prep](final_prep.html) for you guys, and hence has nothing to do with the actual final exam that Professor Falcon is writing. I purposely included problems that are more comprehensive and a little more difficult to get you guys thinking more.<br><br>
+Here are the [solutions](final_prep_solutions.html).
 
 #### Week 8, Thursday (5/24)
 <a href="Code/List.h" download>List.h</a>, <a href="Code/ListTest.cpp" download>ListTest.cpp</a><br>
