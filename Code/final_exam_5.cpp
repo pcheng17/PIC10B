@@ -9,7 +9,7 @@
 */ 
 int find_unique_slow(const std::vector<int>& v);
 int find_unique_medium(std::vector<int> v);
-int find_unique_fast(const std::vector<int>& v, int max);
+int find_unique_fast(const std::vector<int>& v);
 
 int main() {
 	std::ifstream fin("integers100000.txt");
@@ -21,7 +21,7 @@ int main() {
 		v.push_back(n);
 	}
 
-	std::cout << "Fast version: " << find_unique_fast(v, 1000) << std::endl;
+	std::cout << "Fast version: " << find_unique_fast(v) << std::endl;
 	std::cout << "Medium version: " << find_unique_medium(v) << std::endl;
 	std::cout << "Slow version: " << find_unique_slow(v) << std::endl;
 	return 0;
@@ -77,9 +77,17 @@ int find_unique_medium(std::vector<int> v) {
 	}
 }
 
-// This function uses the fact that we know the range of numbers that show up 
-// in the vector, i.e. [1, max]
-int find_unique_fast(const std::vector<int>& v, int max) {
+// This function could use the fact that I did say that the numbers are all
+// less than 1000, but we don't necessarily need it. 
+int find_unique_fast(const std::vector<int>& v) {
+	// First, find the maximum number in the vector
+	// Remember, we already know the vector consists of all positive numbers
+	int max = v[0];
+	for (size_t i = 1; i < v.size(); ++i) {
+		if (v[i] > max) {
+			max = v[i];
+		}
+	}	
 
 	// Initialize a vector of length equal to max of all 0's.
 	// counts[i] will keep track of the number of times (i+1) shows up. 
