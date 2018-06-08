@@ -1,16 +1,30 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <algorithm>
 
 /** I think most people will come up with one of the following two versions.
 	The fast version relies on knowing the range of numbers that show
 	up in the vector, which I've provided to you in the problem statement.
 */ 
 int find_unique_slow(const std::vector<int>& v);
+int find_unique_medium(std::vector<int> v);
 int find_unique_fast(const std::vector<int>& v, int max);
 
 int main() {
+	std::ifstream fin("integers100000.txt");
+	if (fin.fail()) { std::cout << "integers100000.txt failed to open." << std::endl; }
 
+	int n;
+	std::vector<int> v;
+	while (fin >> n) {
+		v.push_back(n);
+	}
+
+	std::cout << "Fast version: " << find_unique_fast(v, 1000) << std::endl;
+	std::cout << "Medium version: " << find_unique_medium(v) << std::endl;
+	std::cout << "Slow version: " << find_unique_slow(v) << std::endl;
+	return 0;
 }
 
 int find_unique_slow(const std::vector<int>& v) {
@@ -30,6 +44,34 @@ int find_unique_slow(const std::vector<int>& v) {
 		// If count == 1, then we only saw one match, and actually, that one match was just the 
 		// number matching itself. Therefore, we found the number that shows up only once.
 		if (count == 1) {
+			return v[i];
+		}
+	}
+}
+
+// Intentionally passing the vector by value because I don't want the sort of this function to mess 
+// with the unordered-ness of the numbers for all other cases. 
+int find_unique_medium(std::vector<int> v) {
+	// Sort the vector
+	std::sort(v.begin(), v.end());
+
+	// Now, the number that shows up once will be the only number whose neighbors
+	// are different from itself. We need to check the ends separately because 
+	// they only have one neighbor each. 
+	
+	// First element
+	if (v[0] != v[1]) {
+		return v[0];
+	}
+
+	// Last element
+	if (v[v.size()-1] != v[v.size()-2]) {
+		return v[v.size()-1];
+	}
+
+	// All interior elements
+	for (size_t i = 1; i < v.size() - 1; ++i) {
+		if (v[i] != v[i-1] && v[i] != v[i+1]) {
 			return v[i];
 		}
 	}
