@@ -4,7 +4,8 @@ I will be using this page to post all of my code from discussion so that no one 
 
 ### Final Exam Prep
 This is my own [final exam prep](final_prep.html) for you guys, and hence has nothing to do with the actual final exam that Professor Falcon is writing. I purposely included problems that are more comprehensive and a little more difficult to get you guys thinking more.<br><br>
-Here are the [solutions](final_prep_solutions.html).
+Here are the [solutions](final_prep_solutions.html).<br><br>
+Click [here](Code/BST_code_v1.cpp) and [here](Code/BST_code_v2.cpp) for two versions of the TreeIterator class that could have been defined for the homework assignment. The first link brings you to the version that most people implemented, which assumes that each TreeNode has a pointer to its parent. The second version does not make such an assumption, and instead, uses a stack data structure within the TreeIterator.
 
 #### Week 8, Thursday (5/24)
 <a href="Code/List.h" download>List.h</a>, <a href="Code/ListTest.cpp" download>ListTest.cpp</a><br>
