@@ -185,8 +185,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-8" data-line-number="8">        <span class="cf">else</span> </a>
 <a class="sourceLine" id="cb6-9" data-line-number="9">            <span class="cf">return</span> v.size();</a>
 <a class="sourceLine" id="cb6-10" data-line-number="10">    }</a>
-<a class="sourceLine" id="cb6-11" data-line-number="11">    <span class="dt">size_t</span> firstThird = (begin + end) / <span class="dv">3</span>;</a>
-<a class="sourceLine" id="cb6-12" data-line-number="12">    <span class="dt">size_t</span> secondThird = <span class="dv">2</span> * firstThird;</a>
+<a class="sourceLine" id="cb6-11" data-line-number="11">    <span class="dt">size_t</span> firstThird = begin + (end - begin) / <span class="dv">3</span>;</a>
+<a class="sourceLine" id="cb6-12" data-line-number="12">    <span class="dt">size_t</span> secondThird = firstThird + (end - begin) / <span class="dv">3</span>;</a>
 <a class="sourceLine" id="cb6-13" data-line-number="13">    <span class="cf">if</span> (val[begin] &lt;= val &amp;&amp; val &lt; v[firstThird])</a>
 <a class="sourceLine" id="cb6-14" data-line-number="14">        <span class="cf">return</span> ternarySearch_helper(v, begin, firstThird, val);</a>
 <a class="sourceLine" id="cb6-15" data-line-number="15">    <span class="cf">else</span> <span class="cf">if</span> (v[firstThird] &lt;= val &amp;&amp; val &lt; v[secondThird])</a>
